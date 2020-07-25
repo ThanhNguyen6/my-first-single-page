@@ -220,14 +220,15 @@ footer {
 
 .project-img {
 	margin-left: 2rem;
-	width: 25rem;
-	height: 15rem;
+	width: 20vw;
+	height: 25vh;
 	object-fit: cover;
 	grid-area: img;
 	border-radius: 10%;
 }
 
 .detail {
+	margin-left: 1rem;
 	padding-top: 2rem;
 	grid-area: detail;
 	text-align: left;
