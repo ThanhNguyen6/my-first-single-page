@@ -157,8 +157,8 @@ footer {
 		height: 50vh;
 	}
 }
-.about-me-content {
-
+.about-me img {
+	border-radius: 20%;
 }
 
 .education {
