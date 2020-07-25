@@ -1,0 +1,237 @@
+:root {
+  --dark-yellow:#F5B702;
+  --text:#590B74;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+body {
+
+}
+
+header {
+
+}
+
+h1, h2 {
+
+}
+
+h1 {
+
+}
+
+h2{
+
+}
+
+a {
+  text-decoration: none;
+  color: var(--text, black);
+}
+
+img {
+
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: var(--dark-yellow, yellow);
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 10px;
+}
+
+.nav ul{
+  list-style: none;
+}
+
+@media (max-width: 64em) {
+  .nav {
+    justify-content: center;
+  }
+
+}
+
+.nav-list a {
+  display: block;
+  font-size: 1.8rem;
+  padding: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-list a:hover {
+  color: red;
+}
+
+.home {
+	display: flex;
+	justify-content: center;
+	/*background: url("../img/sky.jpg") no-repeat center center fixed;
+	background-size: cover;*/
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	flex-direction: column;
+}
+
+.home p {
+	font-size: 3.4em;
+	font-style: italic;
+	font-family: "Times New Roman", 'Ancient Runes', serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+@media (max-width: 64em) {
+  .home p {
+    font-size: 2.1em;
+  }
+
+}
+
+footer {
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;
+  	flex-direction: column;
+  	width: 100%;
+  	background: var(--dark-yellow, yellow);
+  	background-size: cover;
+}
+
+.contact-header {
+	font-size: 2rem;
+}
+
+.contact-content {
+
+}
+
+.btn {
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	border-radius: 50%;
+	background-color: rgb(255, 0, 0);
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+.btn:hover{
+	background-color: white;
+}
+
+.about-me {
+	padding-top: 9rem;
+	width: 100%;
+	font-size: 1.5rem;
+}
+
+.about-me-header {
+	font-size: 2rem;
+	justify-content: center;
+}
+
+.about-me-header h2 {
+	text-shadow: 2px 2px 5px red;
+}
+@media(max-width: 64em) {
+	.about-me-header img {
+		width: 30vw;
+		height: 50vh;
+	}
+}
+.about-me-content {
+
+}
+
+.education {
+	margin-left: 2rem;
+}
+
+.education ul {
+	margin-left: 2rem;
+}
+
+.hobby {
+	margin-left: 2rem;
+}
+
+#hobby {
+	margin-top: 2rem;
+}
+
+.hobby p {
+	margin-left: 2rem;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: 40fr 60fr;
+	background-color:  rgb(255,255,178);
+	border: solid;
+}
+
+.grid-item {
+	text-align: center;
+}
+
+.projects {
+	background-color:  rgb(255,255,178);
+	padding-top: 9rem;
+	font-size: 1.5rem;
+	height: 100vh;
+}
+
+.projects-header {
+	margin-left: 2rem;
+}
+.projects-content {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.projects a {
+	color: black;
+	margin-top: 2rem;
+}
+.project-tile {
+	display: grid;
+	grid-gap: 0px;
+	grid-template-columns: 25fr 75fr;
+	grid-template-areas: "img detail";
+}
+
+.project-img {
+	margin-left: 2rem;
+	width: 25rem;
+	height: 15rem;
+	object-fit: cover;
+	grid-area: img;
+	border-radius: 10%;
+}
+
+.detail {
+	padding-top: 2rem;
+	grid-area: detail;
+	text-align: left;
+}
+
+.detail p {
+	padding-top: 2rem;
+}
